@@ -24,4 +24,6 @@
                 pub-cache-path: # optional, default is default
                 # The architecture of Flutter SDK executable (x64 or arm64)
                 architecture: # optional, default is ${{ runner.arch }}
+            - run: flutter pub get
+            - run: flutter build apk
           
