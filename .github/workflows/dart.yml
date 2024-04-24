@@ -6,7 +6,7 @@
     main:
       runs-on: ubuntu-latest
       steps:
-      #- uses: subosito/flutter-action@v2.14.0
+      - uses: subosito/flutter-action@v2.14.0
         #with:
           # The Flutter version to make available on the path
           #flutter-version: # optional, default is any
@@ -26,7 +26,10 @@
           #architecture: # optional, default is ${{ runner.arch }}
       #- run: ls
       #- run: cd ./app
-      - run: ls
-      - run: cat README.md
-      #- run: flutter pub get
-      #- run: flutter build apk
+      
+      - run: flutter pub get
+      - run: flutter build apk
+      - uses: actions/upload-artifact@master
+      - with:
+          name: apk-release
+          path: Mobile/build/app/outputs/apk/release/app-release.apk
