@@ -6,7 +6,7 @@
     main:
       runs-on: ubuntu-latest
       steps:
-              - uses: subosito/flutter-action@v2.14.0
+             -uses: subosito/flutter-action@v2.14.0
               with:
                 # The Flutter version to make available on the path
                 flutter-version: # optional, default is any
