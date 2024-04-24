@@ -1,4 +1,4 @@
-            - name: Flutter action
+- name: Flutter action
   # You may pin to the exact commit or the version.
   # uses: subosito/flutter-action@1c5eb12d812966ca84680edc38353a0851c8fd56
   on: push
