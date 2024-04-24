@@ -25,5 +25,8 @@
           # The architecture of Flutter SDK executable (x64 or arm64)
           #architecture: # optional, default is ${{ runner.arch }}
       - run: ls
+      - run: cd ./app
+      - run: ls
+      - run: cat README.md
       #- run: flutter pub get
       #- run: flutter build apk
